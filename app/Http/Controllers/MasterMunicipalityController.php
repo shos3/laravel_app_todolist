@@ -7,6 +7,7 @@ use App\Models\MasterMunicipality;
 use App\Models\MasterRegion;
 use App\Models\MasterPrefecture; 
 
+
 class MasterMunicipalityController extends Controller
 {
     public function index(){
