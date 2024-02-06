@@ -11,7 +11,6 @@ class UserController extends Controller
     {
         $user = User::findOrFail($id);
         $tweets = $user->tweets()->latest()->paginate(10);
-
         return view('tweets.mypage', compact('user', 'tweets'));
     }
 }
