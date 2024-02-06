@@ -17,6 +17,7 @@ class MasterRegionController extends Controller
         return view('maps.index', compact('regions'));
     }
 
+
     public function show($region_code){
         $regions = MasterRegion::where('region_code', $region_code)->first();
         $prefectures = $regions->prefectures;
